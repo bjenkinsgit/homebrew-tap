@@ -59,9 +59,16 @@ class PsyxeMcp < Formula
         [mcp_servers.psyxe]
         command = "#{bin}/psyxe-mcp"
 
-      Access control:
-        psyxe-mcp access discover reminders
-        psyxe-mcp access grant reminders "My List"
+      Access control (restrict what the AI can see):
+        psyxe-mcp access discover reminders   # see available lists
+        psyxe-mcp access discover notes        # see available folders
+        psyxe-mcp access grant reminders "Work"
+        psyxe-mcp access grant notes "Projects"
+        psyxe-mcp access list                  # verify restrictions
+
+        The first grant command creates ~/.psyxe/access.toml with secure
+        permissions. Once a category has any rule, only granted resources
+        are accessible — everything else in that category is denied.
 
       Install Apple Shortcuts (optional):
         #{pkgshare}/install-shortcuts.sh
