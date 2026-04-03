@@ -1,13 +1,13 @@
 class PsyxeMcp < Formula
   desc "Apple ecosystem MCP server — Notes, Reminders, Contacts with BERT semantic search"
   homepage "https://github.com/bjenkinsgit/psyxe-mcp"
-  version "0.1.8"
+  version "0.1.9"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/bjenkinsgit/psyxe-mcp/releases/download/v0.1.8/psyxe-mcp-0.1.8-arm64-apple-darwin.tar.gz"
-      sha256 "862c9d3abf2cea9ccdaf85ac893e578d9992483e9263e2739d6ce90c6ffe1104"
+      url "https://github.com/bjenkinsgit/psyxe-mcp/releases/download/v0.1.9/psyxe-mcp-0.1.9-arm64-apple-darwin.tar.gz"
+      sha256 "389fd314592eaca467e0b28fddb095534cea96f1627a58dd0a6238327129fd61"
     end
   end
 
